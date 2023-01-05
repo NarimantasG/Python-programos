@@ -54,5 +54,5 @@
 
 #Užduotis 3-5
 
-zodis = 'niekas'
-print (zodis, zodis, zodis, zodis, zodis)
+zodis = 'niekas '
+print (zodis * 5)
