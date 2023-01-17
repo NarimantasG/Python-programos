@@ -280,7 +280,7 @@
 # c=25
 # print(a,b,c)
 
-#Užduotis12-26
+# #Užduotis12-26
 
 # from random import randint
 # list=[4]
@@ -297,6 +297,48 @@
 #     print(list)
 #     i+=1
 #     item+=1
-
 # NEBAIGTA!!!!!!!
+
+# #Užduotis12-27
+
+# list=[5,9,8,2,2]
+
+# i=0
+# print(list)
+# item=0
+# sk=0
+# while i!=5:
+#     sk=list[item]+sk
+#     i+=1
+#     item+=1
+# sk=sk/2
+# for skaicius in enumerate(list):
+#     if skaicius == sk:
+#         x=list.index(sk)
+# print(list[x:])
+
+# #Užduotis13-28
+
+# from random import randint
+# list=[]
+# list2=[]
+# i=0
+# while i!=6:
+#     list.append(randint(1,10))
+#     i+=1
+# print(list)
+# while True:
+#     skaicius=i
+#     for skaicius in enumerate(list):
+#         while i!=0:
+#             if i%2==0:
+#                 i=skaicius/2
+# NEBAIGTA!!!
+
+#Užduotis13-29
+
+                
+        
+
+
 
