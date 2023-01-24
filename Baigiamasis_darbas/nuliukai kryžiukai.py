@@ -86,19 +86,19 @@ def žaidimas():
             print("\nžaidimas Baigtas.\n")                
             print("Lygiosios!!")
 
-        # čia apkeičiami žaidėjai.
+        # Apkeičiami žaidėjai po ėjimo.
         if ėjimas =='X':
             ėjimas = 'O'
         else:
             ėjimas = 'X'        
     
-    # Klausiu ar žaidėnas nori pradėti žaisti iš kaujo.
+    # Ar žaidėnas nori pradėti žaisti iš kaujo.
     testi = input("Norite žaisti darkartą?(t/n)")
     if testi == "t" or testi == "T":  
         for simbolis in lentelės_simbolis:
             šilentelė[simbolis] = " "
 
         žaidimas()
-# ar kodas vietinis ar importuotas, sudėtas per if
+# ar kodas vietinis ar importuotas(sudėtas per if)
 if __name__ == "__main__": 
     žaidimas()

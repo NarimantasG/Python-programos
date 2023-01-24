@@ -101,3 +101,33 @@ def isWin():
     return False
 
 play()
+
+
+def isValidSelection(position):
+    row, col = position[0] + 1, position[1] + 1
+
+    if row > 3 or row < 1 or col > 3 or col < 1:
+        print('Your selection is out of boundaries. Please re-enter the position.')
+        return False
+    elif layout[row][col] != '-':
+        print('The selected cell is already been marked. Make another cell selection.')
+        return False
+    else:
+        return True
+
+
+import random
+
+pr = 1
+pab = random.randint(2, 100)
+print(pab)
+
+sk = 1
+
+while sk >= pr and sk <= pab:
+    if sk % 3 == 0 and sk % 5 == 0:
+        print(sk, 'dalinasi iš 3 ir 5')
+        break
+    else:
+        print(sk)
+        sk +=1
