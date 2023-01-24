@@ -282,22 +282,25 @@
 
 # #Užduotis12-26
 
-# from random import randint
-# list=[4]
-# i=0
-# while i!=20:
-#     list.append(randint(1,100))
-#     i+=1
-# print(list[1])
+from random import randint
+list=[4]
+i=0
+while i!=20:
+    list.append(randint(1,100))
+    i+=1
+print(list[1])
     
-# i=0
-# item=int(0)
-# print=('Lyginiai Skaičiau')
-# while i!=20:
-#     print(list)
-#     i+=1
-#     item+=1
-# NEBAIGTA!!!!!!!
+i=0
+item=int(0)
+skaicius=0
+print=('Lyginiai Skaičiai')
+while i!=20:
+    for skaicius in enumerate(list):
+        sk=skaicius%2==0
+        print(skaicius)
+    i+=1
+    item+=1
+#NEBAIGTA!!!!!!!
 
 # #Užduotis12-27
 
