@@ -10,7 +10,7 @@
 # #Užduotis1-2
 
 # likutis={'Jonas':1.50,'Petras':1.60,'Juozas':1.70}
-# print(likutis,'ugiu skaicius: ',len(likutis))
+# print(likutis,'ugiu num: ',len(likutis))
 
 # #Užduotis1-3
 
@@ -282,27 +282,27 @@
 
 # #Užduotis12-26
 
-from random import randint
-list=[4]
-i=0
-while i!=20:
-    list.append(randint(1,100))
-    i+=1
-print(list[1])
-    
-i=0
-item=int(0)
-skaicius=0
-print=('Lyginiai Skaičiai')
-while i!=20:
-    for skaicius in enumerate(list):
-        sk=skaicius%2==0
-        print(skaicius)
-    i+=1
-    item+=1
-#NEBAIGTA!!!!!!!
+# from random import randint
+# list = [4, 15, 78, 45, 12,54]
+# i=0
 
-# #Užduotis12-27
+# while i!=20:
+#     list.append(randint(1,100))
+#     i+=1
+# print('Lyginiai')
+# for num in list:
+#     if num % 2 == 0:
+#         print(num,end=" ")
+# print('\nNelyginiai')
+# for num in list:
+#     if num % 2 != 0:
+#         print(num, end=" ")
+# print('\nVisi skaičiai kurie dalinasi iš 3')
+# for num in list:
+#     if num % 3 != 0:
+#         print(num, end=" ")
+
+#Užduotis12-27
 
 # list=[5,9,8,2,2]
 
@@ -315,10 +315,9 @@ while i!=20:
 #     i+=1
 #     item+=1
 # sk=sk/2
-# for skaicius in enumerate(list):
-#     if skaicius == sk:
-#         x=list.index(sk)
-# print(list[x:])
+# for num in list:
+#     if num == sk:
+#         print(list[sk:])
 
 # #Užduotis13-28
 
@@ -330,18 +329,141 @@ while i!=20:
 #     list.append(randint(1,10))
 #     i+=1
 # print(list)
+# sk=0
+# for num in list:
+#     list2.clear()
+#     sk=num
+#     while sk>0:
+#         if num % sk==0:
+#             list2.append(sk)
+#         sk-=1
+#     list2.reverse()
+#     print(f'Skaičius{num} dalinasi iš {list2}')
+
+# #Užduotis14-29
+
+# list=[]
 # while True:
-#     skaicius=i
-#     for skaicius in enumerate(list):
-#         while i!=0:
-#             if i%2==0:
-#                 i=skaicius/2
-# NEBAIGTA!!!
+#     zodis=input('Įveskite žodį. Jei norite baigti rašykite "q"')
+#     if zodis=='q' or zodis=='Q':
+#         break
+#     list.append(zodis)
+# print(list)
+    
+# #Užduotis14-30
 
-#Užduotis13-29
+# list=['Mašina','Laivas','Lėktuvas']
+# num=0
+# i=0
+# for num in list:
+#     print('Žodžio',num,'Raidžių kiekis',len(list[i]))
+#     i+=1
 
-                
-        
+# #Užduotis15-31
 
+# sarasas = []
+# kiek=int(input('kiek pažymių? '))
+# i=0
+# sk=0
+# sk2=0
+# while i<kiek:
+#     pazimys=int(input(f'Pažimys {i+1} '))
+#     sarasas.append(pazimys)
+#     i+=1
+# for num in sarasas:
+#     sk=num
+#     sk2=sk+sk2
+# suma=sk2/kiek
+# print(suma)
+# i=1
+# while i<4:
+#     if i in sarasas:
+#         x=sarasas.count(i)
+#         print(f'pažimys {i} kartojasi {x}')
+#     i+=1
 
+# #Užduotis15-32
 
+list=['Trumpas','vidutinis','Ilgas']
+list2=[]
+i=0
+for num in list:
+    sk=(len(list[i]))
+    list2.append(sk)
+    i+=1
+x=min(list)
+x2=max(list)
+print('Mažiausias: ',x,' Ilgis: ',len(x), 'Didžiausias: ',x2,' Ilgis: ',len(x2))
+
+# sarasas = ["vienas", "du", "trys", "keturi", "penki", "sesi", "septini"]
+# sarasas.sort(key=len)
+# trumpiausias = sarasas[0]
+# print(trumpiausias, "raidziu zodyje yra:", len(trumpiausias))
+
+# sarasas.reverse()
+# ilgiausias = sarasas[0]
+# print(ilgiausias, "raidziu zodyje yra:", len(ilgiausias))
+
+# #Užduotis16-33
+
+# #1
+# from random import randint
+# list=[]
+# i=0
+# x=20
+# sk2=0
+# while i<x:
+#     list.append(randint(1, 20))
+#     i+=1
+# x1=min(list)
+# print('Mažiausias: ',x1)
+# x2=max(list)
+# print('Didžiausias: ',x2)
+# for num in list:
+#     sk=num
+#     sk2=sk+sk2
+# suma=sk2/x
+# print('Vidurkis 1:',suma)
+# #2
+# list2=[]
+# sk2=0
+# for num in list:
+#     if num<suma:
+#         list2.append(num)
+# for num in list2:
+#     sk=num
+#     sk2=sk+sk2
+# x=len(list2)
+# suma1=sk2/x
+# print('vidurkis 2: ',suma1)
+# #3
+# list3=[]
+# for num in list:
+#     if num<suma:
+#         list3.append(num)
+# for num in list:
+#     sk=num
+#     sk2=sk+sk2
+# x=len(list3)
+# suma2=sk2/x
+# print('Vidurkis 3: ',suma2)
+# #4
+# print('Mažiausias: ',x1)
+# print('Didžiausias: ',x2)
+# print('Vidurkis 1: ',suma)
+# print('Sąrašas 2: ',list2)
+# print('vidurkis 2: ',suma1)
+# print('Sąrašas 3: ',list3)
+# print('Vidurkis 3: ',suma2)
+
+#Užduotis17-34
+
+list=['Medis','parasparnis','Vanduo','Oras']
+list2=[]
+i=0
+for num in list:
+    sk=(len(list[i]))
+    list2.append(sk)
+x1=min(list2)
+x2=max(list2)
+print('Mažiausias',{x1}, 'Ilgiausias', {x2}, {x1},'-',{x2},'=',{x1-x2})

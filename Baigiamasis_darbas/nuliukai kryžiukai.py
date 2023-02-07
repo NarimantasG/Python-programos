@@ -1,7 +1,5 @@
 # dvieju žaidėjų kryžiukai nuliukai
 
-
-
 šilentelė = {'7': ' ' , '8': ' ' , '9': ' ' ,
             '4': ' ' , '5': ' ' , '6': ' ' ,
             '1': ' ' , '2': ' ' , '3': ' ' }
@@ -81,7 +79,7 @@ def žaidimas():
                 print(" **** " +ėjimas + " Laimėjo. ****")
                 break 
 
-        #  Jai nei X nei O laimėjo ir lentelė pilna, paskelbiamos lygiosios
+        #  Jai nei X nei O laimėjo ir lentelė pilna, paskelbtos lygiosios
         if skaičiuoja == 9:
             print("\nžaidimas Baigtas.\n")                
             print("Lygiosios!!")
